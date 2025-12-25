@@ -1321,20 +1321,16 @@
             window.location.href = 'mailto:nkizayoussef@gmail.com?subject=Contact depuis portfolio&body=Bonjour Youssef,';
         });
         
-        document.getElementById('phoneLink').addEventListener('click', function(e) {
-            e.preventDefault();
-            window.location.href = 'tel:+212612200129';
-        });
-        
         document.getElementById('linkedinLink').addEventListener('click', function(e) {
-            e.preventDefault();
-            showNotification('Lien LinkedIn non configuré. Ajoutez votre URL LinkedIn dans le code.', 'info');
-        });
-        
-        document.getElementById('githubLink').addEventListener('click', function(e) {
-            e.preventDefault();
-            showNotification('Lien GitHub non configuré. Ajoutez votre URL GitHub dans le code.', 'info');
-        });
+    e.preventDefault();
+    // Should open YOUR LinkedIn, not show notification
+    window.open('https://www.linkedin.com/in/youssef-nkiza-133379276/', '_blank');
+});
+
+document.getElementById('githubLink').addEventListener('click', function(e) {
+    e.preventDefault();
+    window.open('https://github.com/youssefnkiza1', '_blank');
+});
         
         // Notification function
         function showNotification(message, type = 'info') {
