@@ -55,7 +55,7 @@ Technicien Spécialisé en Infrastructure Digitale, option Systèmes et Réseaux
 - **LinkedIn**: https://www.linkedin.com/in/youssef-nkiza-133379276/
 ## 📄 CV
 
-[![Télécharger CV](https://img.shields.io/badge/Télécharger-CV_PDF-red)](CV_Youssef_Nkiza.pdf)
+[![Télécharger CV](https://img.shields.io/badge/📋_Télécharger_mon_CV-64ffda?style=for-the-badge&logo=adobeacrobatreader)](CV_Youssef_Nkiza_Portfolio.pdf)
 
 ---
 
