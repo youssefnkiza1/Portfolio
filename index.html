@@ -67,7 +67,33 @@
             justify-content: space-between;
             align-items: center;
         }
+/* Logo Image Styling */
+.logo img {
+    height: 35px !important;
+    width: auto !important;
+    /* Makes the logo white (assuming your logo is dark) */
+    filter: brightness(0) invert(1) !important;
+    /* Removes any background */
+    background: transparent !important;
+    display: block;
+    border-radius: 3px;
+    transition: all 0.3s ease !important;
+}
 
+/* Hover effect for logo */
+.logo:hover img {
+    transform: translateY(-2px) !important;
+    filter: brightness(0) invert(1) drop-shadow(0 0 5px var(--primary-color)) !important;
+}
+
+/* Fix the underline effect for logo when it contains an image */
+.logo:has(img):after {
+    width: 0 !important;
+}
+
+.logo:has(img):hover:after {
+    width: 0 !important;
+}
         .logo {
             font-size: 24px;
             font-weight: bold;
@@ -793,8 +819,8 @@
     <header>
         <div class="container">
             <nav>
-                <a class="logo" href="#">
-    <img src="https://raw.githubusercontent.com/youssefnkiza1/Portfolio/main/YN logo.png" alt="Youssef Nkiza Logo">
+              <a class="logo" href="#">
+    <img src="https://raw.githubusercontent.com/youssefnkiza1/Portfolio/main/YN%20logo.png" alt="Youssef Nkiza Logo" style="height: 35px; width: auto; filter: brightness(0) invert(1);">
 </a>
                 <button class="mobile-menu-btn" id="mobileMenuBtn">
                     <i class="fas fa-bars"></i>
